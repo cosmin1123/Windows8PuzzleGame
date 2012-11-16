@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>App3</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- App3 references -->
+    <LINK href="/css/joculet.css" rel="stylesheet" type="text/css">     
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+    
+    <body>
+
+        <div id="timeS">1000 </div> 
+           <input type="button" value="Reset" onclick="reset()"/>
+        <br />
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD  onclick="move(1)" id="1"><img src="/images/8.png" id ="18"/></TD>
+    <TD  onclick="move(2)" id="2"><img src="/images/2.png" id ="12"/></TD>
+    <TD  onclick="move(3)" id="3"><img src="/images/5.png" id ="15"/></TD></TR>
+  <TR>
+    <TD  onclick="move(4)" id="4"><img src="/images/6.png" id ="16"/></TD>
+    <TD  onclick="move(5)" id="5"><img src="/images/3.png" id ="13"/></TD>
+    <TD  onclick="move(6)" id="6"><img src="/images/4.png" id ="14"/></TD></TR>
+  <TR>
+    <TD  onclick="move(7)" id="7"><img src="/images/7.png" id ="17"/></TD>
+    <TD  onclick="move(8)" id="8"><img src="/images/1.png" id ="11"/></TD>
+    <TD  onclick="move(9)" id="9"> </TD></TR></TBODY></TABLE>
+            <br />
+<DIV id="10">&nbsp</DIV></body>
+
+    <input type="button" value="Reset" onclick="reset()"/>
+    <br />
+    <br />
+ <script>
+        window.setInterval(time, 1000);
+        function resize() {
+            width = window.innerWidth
+            height = window.innerHeight
+
+            for (i = 11; i < 19; i++) {
+                myimg = document.getElementById(i);
+                myimg.style.height = height * 0.20 + "px";
+                myimg.style.width = width * 0.20 + "px";
+            }
+        }
+        resize();
+        window.setInterval(resize, 1000);
+    </script>
+   
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>App3</title>
+        <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- App3 references -->
+    <LINK href="/css/joculet.css" rel="stylesheet" type="text/css">     
+    <script src="/js/default.js"></script>
+    
+    <style>
+        body{
+	background-color:#124863;
+	}
+        td{
+
+	padding:0px;
+    background-color:#124863;
+	width:auto;
+	height:30%;
+	}
+	
+table{
+	margin:0 auto;
+	}
+    </style>
+</head>
+
+
+    <body>
+        <table >
+            <tr>
+                <td >
+       <a href="page.html"><img src="/images/tile1.png" width="500" height="500" id="a"/></a>
+                    </td> 
+                
+                <td id="c" style="background-color:#124863;">
+                                        
+                </td>
+
+                <td >
+         <a href="default.html"><img src="/images/tile2.png" width="500" height="500" id="b"/></a> 
+    </td>
+                </tr>
+        </table>
+         
+        <script>
+
+             function resize() {
+                 width = window.innerWidth
+                 height = window.innerHeight
+
+                     myimg = document.getElementById("a");
+                     myimg.style.height = height * 0.5  + "px";
+                     myimg.style.width = width * 0.40 + "px";
+
+                     myimg = document.getElementById("b");
+                     myimg.style.height = height * 0.5 + "px";
+                     myimg.style.width = width * 0.40 + "px";
+
+                     myimg = document.getElementById("c");
+                     myimg.style.height = height + "px";
+                     myimg.style.width = width * 0.10 + "px";
+                 
+             }
+             resize();
+             window.setInterval(resize, 1000);
+    </script>
+
+    </body>
+</html>

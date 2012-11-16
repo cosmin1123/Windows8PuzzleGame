@@ -1,0 +1,51 @@
+﻿body{
+	background-color:#124863;
+	}
+
+span {
+      margin: 0 auto;
+          background-color: #981624;
+    font-size: 30px;
+    text-align: center;
+}
+td{
+	background-color:black;
+	padding:50px;
+    border-radius:20%;
+	width:auto;
+	height:30%;
+
+	}
+h2{
+	color:#FFFFFF;
+	text-align:center;
+	}
+	
+table{
+	margin:0 auto;
+	}
+
+div {
+    margin: 0 auto;
+    background-color: #981624;
+    font-size: 30px;
+    text-align: center;
+}
+	
+input {
+    width: 100px;
+    height: 50px;
+    background-color: #bbfc18;
+    margin-left: 46%;
+    border-radius: 100%;
+	margin-top:2%;
+}
+#timeS {
+    width:200px;
+    height:50px;
+    margin:0auto;
+    border:dotted;
+    border-color:#981624;
+    background-color:#981624;
+   
+}

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>App3</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- App3 references -->
+    <LINK href="/css/joculet1.css" rel="stylesheet" type="text/css">     
+    <link href="/css/stylesheet.css" rel="stylesheet" />
+    <script src="/js/script.js"></script>
+</head>
+   <body>
+
+        <div id="timeS">1000 </div> 
+        <br />
+          <input type="button" value="<-" onclick="reset()"/>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD  onclick="move(1)">
+      <H2 id="1">1</H2></TD>
+    <TD  onclick="move(2)">
+      <H2 id="2">2</H2></TD>
+    <TD  onclick="move(3)">
+      <H2 id="3">3</H2></TD></TR>
+  <TR>
+    <TD  onclick="move(4)">
+      <H2 id="4">4</H2></TD>
+    <TD  onclick="move(5)">
+      <H2 id="5">5</H2></TD>
+    <TD  onclick="move(6)">
+      <H2 id="6">6</H2></TD></TR>
+  <TR>
+    <TD  onclick="move(7)">
+      <H2 id="7">7</H2></TD>
+    <TD  onclick="move(8)">
+      <H2 id="8">8</H2></TD>
+    <TD  onclick="move(9)"><h2 id="9"> </h2></TD></TR></TBODY></TABLE>
+    <br />
+<DIV id="10">&nbsp</DIV></body>
+
+    <input type="button" value="Reset" onclick="reset()"/>
+    <br />
+    <br />
+     <script>
+         window.setInterval(time, 1000);
+         </script>
+</html>
